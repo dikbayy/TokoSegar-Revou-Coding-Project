@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoSegar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/icons8-grocery-60.png" type="image/png">
+</head>
+<body>
+    <nav class="navigation-groceries">
+        <img src="assets/TokoSegarLogo.png" alt="logo">
+        <button id="button"><img src="assets/hamburger-removebg-preview.png" alt="dropdown"></button> 
+        <ul id="menu">
+            <li> <a href="#Home">Home</a></li>
+            <li> <a href="#package">Our Package</a> </li>
+            <li> <a href="#call-us">Call Us</a></li>
+        </ul>
+    </nav>
+    <header class="header-groceries" id="Home">
+            <div class="slides">
+                <img src="assets/daria-volkova-BMnX7L9G5xc-unsplash.jpg" alt="food">
+            </div>
+            <div class="slides">
+                <img src="assets/kenny-eliason-SvhXD3kPSTY-unsplash.jpg" alt="food">
+            </div>
+            <div class="slides">
+                <img src="assets/nrd-D6Tu_L3chLE-unsplash.jpg" alt="food">
+            </div>
+            <div class="slides-text">
+                <h1>Top Rated E-Groceries Shop in</h1>
+                <h1>Indonesian</h1>
+                <p>Every Day with best ingredients</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="section-groceries">
+            <img src="assets/foods.jpeg" alt="logo">
+            <p id="paragraph-quote">"setiap hari beli sayur buah yang fresh disini"</p>
+            <div class="profile-section">
+                <img src="assets/elonmusk.jpg" alt="profile picture">
+                <div class="profile-description">
+                    <h4>Elon Musk</h4>
+                    <p><i>CEO of Tesla & SpaceX, 52</i></p>
+                </div>
+            </div>
+            <div id="line"></div>
+            <p id="paragraph-information">Use this space to provide users with more information <br>
+                about your offer. Consider it a follow-up to your headline <br>
+                and explain the benefits of your service or product
+            </p>
+            <div class="section-benefits">
+                <div class="benefits">
+                    <img src="assets/number-1.png" alt="1">
+                    <p>Your first feature, written in the form of a benefit statement</p>
+                </div>
+                <div class="benefits">
+                    <img src="assets/number-2.png" alt="2">
+                    <p>Your second feature, written in the form of a benefit statement</p>
+                </div>
+                <div class="benefits">
+                    <img src="assets/number-3.png" alt="3">
+                    <p>Your third feature written, in the form of a benefit statement</p>
+                </div>
+            </div>
+ 
+        </section>
+        <aside class="aside-groceries">
+            <div class="form-groceries">
+                <div class="content-center">
+                    <h2>Contact Us</h2>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                    <form name="message-form" onsubmit="return validateForm()">
+                        <p> <b>Your Name:</b> </p> 
+                        <input placeholder="First and last name" type="text" name="first-last-name" required>
+                        <br>
+                        <p> <b>Email Address:</b> </p>
+                        <input placeholder="example@email.com" type="email" name="email-address" required>
+                        <br>
+                        <p> <b>What are you interested in?</b> </p>
+                        <select id="field">
+                            <option value="">Select an option</option>
+                            <option value="Fresh Vegetable">Fresh Vegetable</option>
+                            <option value="Fresh Fruit">Fresh Fruit</option>
+                            <option value="Instant Delivery">Instant Delivery</option>
+                            <option value="Kitchen Ingredient">Kitchen Ingredient</option>
+                            <option value="Kitchen Set">Kitchen Set</option>
+                            <option value="Bundling Set">Bundling Set</option>
+                        </select>
+                        <br>
+                        <input id="submit-data" type="submit" value="Submit" required>
+                    </form>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="package-title">
+        <h2 id="package">Our Package</h2>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="flex-full-content">
+                <img src="assets/icons8-bulb-50.png" alt="bulb">
+                <div class="flex-content">
+                    <h3>Fresh Vegetable</h3>
+                    <p>Sayuran segar langsung dari pertanian terbaik</p>
+                </div>
+            </div>
+            <div class="flex-full-content">
+                <img src="assets/icons8-bulb-50.png" alt="bulb">
+                <div class="flex-content">
+                    <h3>Fresh Fruit</h3>
+                    <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                </div>                
+            </div>
+            <div class="flex-full-content">
+                <img src="assets/icons8-bulb-50.png" alt="bulb">
+                <div class="flex-content">
+                    <h3>Instant Delivery</h3>
+                    <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi
+                        belanja kamu
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="line-two"></div>
+        <div class="flex-item">
+            <div class="flex-full-content">
+                <img src="assets/icons8-star-50.png" alt="star">
+                <div class="flex-content">
+                    <h3>Kitchen Ingredient</h3>
+                    <p>Bumbu dapur lengkap untuk keperluan <br> memasak kamu</p>
+                </div>
+            </div>
+            <div class="flex-full-content">
+                <img src="assets/icons8-star-50.png" alt="star">
+                <div class="flex-content">
+                    <h3>Kitchen Set</h3>
+                    <p>Segala jenis alat masa untuk membantu kamu memasak</p>
+                </div>
+            </div>
+            <div class="flex-full-content">
+                <img src="assets/icons8-star-50.png" alt="star">
+                <div class="flex-content">
+                    <h3>Bundling Set</h3>
+                    <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="call-to-action" id="call-us">
+        <h1>Talk With Us</h1>
+        <p>Ingin memesan package? Ada kendala yang perlu dibantu? Silakan hubungi kami 
+            dengan menekan tombol di bawah ini</p>
+        <button>
+            <h2>Hubungi Kami</h2>
+        </button>
+    </div>
+    <footer>
+        <img src="assets/TokoSegarLogo.png" alt="Logo">
+        <div class="footer-flex">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div id="footer-flex-two" >
+            <p>© 2024</p>
+            <p>TokoSegar</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
